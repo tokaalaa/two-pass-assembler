@@ -1,0 +1,16 @@
+.2345678901234567890123456
+.
+         START   0000
+BGN      LDA     BETA
+         MUL     #4
+         RMO     A,S
+         LDA     GAMMA
+         MUL     #3
+         ADDR    S,A
+         STA     ALPHA
+         J       *
+.
+ALPHA    RESW    1
+BETA     WORD    56
+GAMMA    WORD    10
+         END     BGN

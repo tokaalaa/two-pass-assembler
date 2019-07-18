@@ -1,0 +1,26 @@
+.23456789012345678901234567890123456
+.
+sum      start   0000
+first    ldx     #0
+         lda     #0
+         LDA     v-count
+         lda     @loop-first
+         +lda    #table2
+         base    table2
+loop     add     table,x
+         add     table2,x
+         tix     count
+         jlt     loop
+         jsub    couNT
+         +sta    total
+         ORG     LOOP
+TEST     RESW    1
+count    resw    1
+x        resw    1
+y        resw    1
+V        WORD    1
+m        equ     v-count
+table    resw    2000
+table2   resw    2000
+total    resw    1
+         end     first

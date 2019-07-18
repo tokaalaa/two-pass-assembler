@@ -1,0 +1,22 @@
+.2345678901234567890
+START   0000 
+  LDA  #0
+         STA     /8
+LOOP     TD      DEVICE
+         JEQ     LOOP
+.        J       ENDL .comment
+START RD DEVICE
+       SUBT    #48
+     MUL     #10
+       STA     DIGIT
+WLOOP    TD      DEVICE
+JEQ     WLOOP
+.        J       ENDL
+         ADD     DIGIT
+   STA     DIGIT
+ENDL     LDA     DIGIT
+    J       *
+.   
+DEVICE   BYTE    X'F3'
+DIGIT    RESW    1
+         END

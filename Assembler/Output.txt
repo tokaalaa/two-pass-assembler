@@ -1,0 +1,66 @@
+Address     label    OPCode  Operand             Comment
+000000      COPY     start   0                 
+000000      FIRST    STL     2+3               
+000003               LDB     #2+3              
+                     BASE    LENGTH            
+000006      CLOOP    +JSUB   RDREC-5           
+00000a               LDA     RDREC-LENGTH      
+00000d               COMP    #0                
+000010               JEQ     ENDFIL            
+000013               +JSUB   WRREC             
+000017               J       CLOOP             
+000017 .comment
+00001a      ENDFIL   LDA     EOF               
+00001d               STA     BUFFER            
+000020               LDA     #3                
+000023               STA     LENGTH            
+000026               +JSUB   WRREC             
+00002a               J       @RETADR           
+00002d      EOF      BYTE    C'EOS'            
+000030      RETADR   RESW    1                 
+000033      LENGTH   RESW    1                 
+000036      BUFFER   RESB    4096              
+001036      RDREC    CLEAR   X                 
+001038               CLEAR   A                 
+00103a               CLEAR   S                 
+00103c               +LDT    #4096             
+001040      RLOOP    TD      INPUT             
+001043               JEQ     RLOOP             
+001046               RD      INPUT             
+001049               COMPR   A,S               
+00104b               JEQ     EXIT              
+00104e               STCH    BUFFER,X          
+001051               TIXR    T                 
+001053               JLT     RLOOP             
+001056      EXIT     STX     LENGTH            
+001059               lda     #5                
+00105c      INPUT    BYTE    X'F1'             
+00105d      WRREC    CLEAR   X                 
+00105f               LDT     LENGTH            
+001062      WLOOP    TD      OUTPUT            
+001065               JEQ     WLOOP             
+001068               LDCH    BUFFER,X          
+00106b               WD      OUTPUT            
+00106e               TIXR    T                 
+001070               JLT     WLOOP             
+001073               lda     #5                
+001076      OUTPUT   BYTE    X'05'             
+001077               END     FIRST             
+
+
+******************************************************** 
+Symbol    Location    type    
+buffer    000036      R        
+cloop     000006      R        
+endfil    00001a      R        
+eof       00002d      R        
+exit      001056      R        
+first     000000      R        
+input     00105c      R        
+length    000033      R        
+output    001076      R        
+rdrec     001036      R        
+retadr    000030      R        
+rloop     001040      R        
+wloop     001062      R        
+wrrec     00105d      R        

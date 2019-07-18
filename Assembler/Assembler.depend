@@ -1,0 +1,384 @@
+# depslib dependency file v1.0
+1556295828 source:c:\users\lenovo\desktop\assembler\pass1.cpp
+	<iostream>
+	"Program.h"
+
+1556302390 source:c:\users\lenovo\desktop\assembler\src\line.cpp
+	"Line.h"
+	"Parser.h"
+	"Address.h"
+	"SymbolTable.h"
+	"Output.h"
+	"FormatChecker.h"
+	"LiteralTable.h"
+	"OperationCodes.h"
+	<string>
+
+1556157477 c:\users\lenovo\desktop\assembler\include\line.h
+	<string>
+
+1556153207 c:\users\lenovo\desktop\assembler\include\parser.h
+	<string>
+	"Program.h"
+	"Address.h"
+	"Output.h"
+	"SymbolTable.h"
+	"Line.h"
+
+1556296722 c:\users\lenovo\desktop\assembler\include\program.h
+	<string>
+	<Address.h>
+	<Output.h>
+	<SymbolTable.h>
+	<Parser.h>
+	"LiteralTable.h"
+
+1556107863 c:\users\lenovo\desktop\assembler\include\address.h
+	<string>
+
+1556103509 c:\users\lenovo\desktop\assembler\include\output.h
+	<string>
+	<Line.h>
+	<map>
+
+1556294472 c:\users\lenovo\desktop\assembler\include\symboltable.h
+	<iostream>
+	<map>
+	<string>
+	<vector>
+	<sstream>
+	<utility>
+
+1556209373 c:\users\lenovo\desktop\assembler\include\literaltable.h
+	<string>
+	<map>
+	<iostream>
+
+1556135339 c:\users\lenovo\desktop\assembler\include\formatchecker.h
+	<string>
+	<regex>
+
+1556155075 c:\users\lenovo\desktop\assembler\include\operationcodes.h
+	<map>
+	<string>
+	<iostream>
+
+1556209381 source:c:\users\lenovo\desktop\assembler\src\operationcodes.cpp
+	<iostream>
+	<map>
+	<string>
+	"OperationCodes.h"
+	<regex>
+	"FormatChecker.h"
+
+1556302363 source:c:\users\lenovo\desktop\assembler\src\output.cpp
+	"Output.h"
+	<fstream>
+	<iostream>
+	<map>
+
+1556296722 source:c:\users\lenovo\desktop\assembler\src\parser.cpp
+	"Parser.h"
+	"Line.h"
+	<regex>
+	<string>
+	<iostream>
+	"Address.h"
+	"OperationCodes.h"
+	"Output.h"
+	"Program.h"
+	"SymbolTable.h"
+
+1556296722 source:c:\users\lenovo\desktop\assembler\src\program.cpp
+	"Program.h"
+	<iostream>
+	<fstream>
+	"Line.h"
+	"Parser.h"
+	<regex>
+	"Address.h"
+	"Output.h"
+	"LiteralTable.h"
+
+1556296722 source:c:\users\lenovo\desktop\assembler\src\symboltable.cpp
+	"SymbolTable.h"
+	<iostream>
+	<string>
+	<map>
+	<cctype>
+	<sstream>
+	<vector>
+	<utility>
+	<algorithm>
+
+1556295828 source:c:\users\lenovo\desktop\assembler\src\address.cpp
+	<iostream>
+	<sstream>
+	<algorithm>
+	<string>
+	"Address.h"
+
+1556295828 source:c:\users\lenovo\desktop\assembler\src\formatchecker.cpp
+	"FormatChecker.h"
+	<regex>
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+
+1556302333 source:c:\users\lenovo\desktop\assembler\src\literaltable.cpp
+	"LiteralTable.h"
+	<string>
+	<map>
+	<iostream>
+	<sstream>
+	<cstdlib>
+	"Program.h"
+	"Address.h"
+
+1557792861 source:f:\git\systems-team\assembler\pass1.cpp
+	<iostream>
+	<fstream>
+	"Program.h"
+
+1557792288 f:\git\systems-team\assembler\include\program.h
+	<string>
+	<Address.h>
+	<Output.h>
+	<SymbolTable.h>
+	<Parser.h>
+	"LiteralTable.h"
+
+1556107863 f:\git\systems-team\assembler\include\address.h
+	<string>
+
+1557187308 f:\git\systems-team\assembler\include\output.h
+	<string>
+	<Line.h>
+	<map>
+
+1556157477 f:\git\systems-team\assembler\include\line.h
+	<string>
+
+1557251457 f:\git\systems-team\assembler\include\symboltable.h
+	<iostream>
+	<map>
+	<string>
+	<vector>
+	<sstream>
+	<utility>
+
+1556153207 f:\git\systems-team\assembler\include\parser.h
+	<string>
+	"Program.h"
+	"Address.h"
+	"Output.h"
+	"SymbolTable.h"
+	"Line.h"
+
+1557873651 f:\git\systems-team\assembler\include\literaltable.h
+	<string>
+	<map>
+	<iostream>
+
+1557251638 source:f:\git\systems-team\assembler\src\address.cpp
+	<iostream>
+	<sstream>
+	<algorithm>
+	<string>
+	"Address.h"
+
+1557252366 source:f:\git\systems-team\assembler\src\formatchecker.cpp
+	"FormatChecker.h"
+	<regex>
+	<vector>
+	<iostream>
+	<algorithm>
+	<string>
+
+1556135339 f:\git\systems-team\assembler\include\formatchecker.h
+	<string>
+	<regex>
+
+1557588473 source:f:\git\systems-team\assembler\src\line.cpp
+	"Line.h"
+	"Parser.h"
+	"Address.h"
+	"SymbolTable.h"
+	"Output.h"
+	"FormatChecker.h"
+	"LiteralTable.h"
+	"OperationCodes.h"
+	<string>
+	<vector>
+	<regex>
+	<ReportError.h>
+
+1556155075 f:\git\systems-team\assembler\include\operationcodes.h
+	<map>
+	<string>
+	<iostream>
+
+1557079426 source:f:\git\systems-team\assembler\src\literaltable.cpp
+	"LiteralTable.h"
+	<string>
+	<map>
+	<iostream>
+	<sstream>
+	<cstdlib>
+	"Program.h"
+	"Address.h"
+
+1557588188 source:f:\git\systems-team\assembler\src\operationcodes.cpp
+	<iostream>
+	<map>
+	<string>
+	"OperationCodes.h"
+	<regex>
+	"FormatChecker.h"
+
+1557522862 source:f:\git\systems-team\assembler\src\output.cpp
+	"Output.h"
+	<fstream>
+	<iostream>
+	<map>
+	<ReportError.h>
+
+1557587672 source:f:\git\systems-team\assembler\src\parser.cpp
+	"Parser.h"
+	"Line.h"
+	<regex>
+	<string>
+	<iostream>
+	"Address.h"
+	"OperationCodes.h"
+	"Output.h"
+	"Program.h"
+	"SymbolTable.h"
+
+1557792288 source:f:\git\systems-team\assembler\src\program.cpp
+	"Program.h"
+	<iostream>
+	<fstream>
+	"Line.h"
+	"Parser.h"
+	<regex>
+	"Address.h"
+	"Output.h"
+	"LiteralTable.h"
+	"Parser_phase2.h"
+	"ObjectFile.h"
+	"ReportError.h"
+
+1557251537 source:f:\git\systems-team\assembler\src\symboltable.cpp
+	"SymbolTable.h"
+	<iostream>
+	<string>
+	<map>
+	<cctype>
+	<sstream>
+	<vector>
+	<utility>
+	<algorithm>
+
+1557580922 source:f:\git\systems-team\assembler\src\input.cpp
+	"Input.h"
+	<fstream>
+	<sstream>
+	<algorithm>
+	<iostream>
+	<regex>
+
+1557523773 f:\git\systems-team\assembler\include\input.h
+	"string"
+	<fstream>
+	<algorithm>
+
+1557790980 source:f:\git\systems-team\assembler\src\objectcode.cpp
+	"ObjectCode.h"
+	<map>
+	<string>
+	"OperationCodes.h"
+	<algorithm>
+	<sstream>
+	<bitset>
+	"SymbolTable.h"
+	"LiteralTable.h"
+	"Program.h"
+	"expressions.h"
+	"FormatChecker.h"
+
+1557790974 f:\git\systems-team\assembler\include\objectcode.h
+	"OperationCodes.h"
+	"SymbolTable.h"
+	"LiteralTable.h"
+	<map>
+	<string>
+	<iostream>
+	"Program.h"
+	"expressions.h"
+	"FormatChecker.h"
+
+1557522943 source:f:\git\systems-team\assembler\src\parser_phase2.cpp
+	"Parser_phase2.h"
+	"Input.h"
+	"Program.h"
+	"Output.h"
+	"ObjectCode.h"
+	"ObjectFile.h"
+	"ReportError.h"
+
+1557187801 f:\git\systems-team\assembler\include\parser_phase2.h
+	"string"
+
+1557793716 source:f:\git\systems-team\assembler\src\objectfile.cpp
+	"ObjectFile.h"
+	<string>
+	<Program.h>
+	<fstream>
+	<sstream>
+	<regex>
+
+1557793374 f:\git\systems-team\assembler\include\objectfile.h
+	<string>
+	<vector>
+
+1557522249 f:\git\systems-team\assembler\include\reporterror.h
+	<vector>
+	<string>
+
+1557522964 source:f:\git\systems-team\assembler\src\reporterror.cpp
+	"ReportError.h"
+	<vector>
+	<string>
+	<Output.h>
+	"Program.h"
+
+1557683517 source:f:\git\systems-team\assembler\src\expressions.cpp
+	"expressions.h"
+	<iostream>
+	<string>
+	<map>
+	<cctype>
+	<sstream>
+	<vector>
+	<utility>
+	<algorithm>
+	<FormatChecker.h>
+	<SymbolTable.h>
+
+1557683526 f:\git\systems-team\assembler\include\expressions.h
+	<iostream>
+	<string>
+	<map>
+	<cctype>
+	<sstream>
+	<vector>
+	<utility>
+	<algorithm>
+
+1557792605 source:f:\git\systems-team\assembler\assemble.cpp
+	<iostream>
+	<fstream>
+	"Program.h"
+
